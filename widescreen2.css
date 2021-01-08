@@ -1,0 +1,391 @@
+* {
+   margin: auto;
+   padding: 0px;
+   
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+}
+
+.subtitle {
+	font-family: "Open Sans", sans-serif;
+	color: #900;	
+	font-size: xx-large;
+}
+
+.subicon {
+	float: left;
+}
+
+.content {
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	font-size: 18px;
+	min-width: 960px;
+	max-width: 960px;
+}
+
+.video {
+	display: block;
+	width: auto;
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+/* NAV MANAGEMENT*/
+.sidenav{
+	display: none
+}
+
+.menubutton{
+	display: none
+}
+
+.navbar {
+	min-width: 960px;
+	max-width: 960px;
+}
+
+.navcontainer {
+	background-color: #F8F8F8;
+	width: 100%;
+  	min-height: 54px;
+  	max-height: 54px;
+  	z-index: 1;
+}
+
+.sticky {
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.sticky + .content {
+  	padding-top: 100px;
+}
+
+.navbar a {
+  	float: right;
+  	font-size: 16px;
+  	color: #000000;
+  	text-align: center;
+  	padding: 16px 16px;
+  	text-decoration: none;
+}
+
+.navbar .current {
+	background-color: #900;
+	color: #FFF;
+}
+
+.navbar: active {
+	background-color: #990000;
+	color: #FFF;
+}
+
+.navbaricon {
+	padding: 16px;
+}
+.dropdown {
+  	float: right;
+  	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	border: none;
+	outline: none;
+	color: #000000;
+	padding: 16px 16px;
+	background-color: #F8F8F8;
+	margin: 0;
+}
+
+.navbar a:hover {
+  	background-color: #f1f1f1;
+	color: #000
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #f1f1f1;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	padding: 16px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+  	font-family: Karla, sans-serif;
+  
+}
+.dropdown-content b {
+  	float: none;
+  	color: black;
+  	padding: 16px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+  	font-family: "Open Sans", sans-serif;
+}
+
+.dropdown-content a:hover {
+	background-color: #990000;
+  	color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+
+/* PARALLAX EFFECTS */
+.parallax1 {
+	background-image: url(../Pages/Game%20Reviews/PC.png);
+	min-height: 1000px;
+	width: 100%;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.parallax2 {
+	background-image: url(../Pages/Game%20Reviews/Xbox.png);
+	min-height: 1000px;
+	width: 100%;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.parallax3 {
+	background-image: url(../Pages/Game%20Reviews/PlayStation.png);
+	min-height: 1000px;
+	width: 100%;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.parallax4 {
+	background-image: url(../Pages/Game%20Reviews/Mobile.png);
+	min-height: 1000px;
+	width: 100%;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.parallax5 {
+	background-image: url(../Pages/Game%20Reviews/Nintendo.png);
+	min-height: 1000px;
+	width: 100%;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+/* LINKS */
+.footer a {
+	font-size: 15px;
+	padding-right: 30px;
+}
+.footer a:link {
+ 	color: #999;
+}
+
+.footer a:visited {
+ 	color: #999;
+}
+
+.footer a:hover {
+ 	color: #900;
+}
+
+.footer a:active {
+ 	color: red;
+}
+
+/* FOOTER */
+.footericon {
+	padding-left: 50px;
+	float: left;
+	width: auto;
+}
+
+.footer {
+	color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
+	text-align: right;
+	float: right;
+	font-size: 25px;
+	padding-right: 30px;
+	padding-top: 20px;
+}
+
+.footersecondary {
+	color: #990000;
+	font-family: "Open Sans", sans-serif;
+	text-align: right;
+	float: right;
+	font-size: 20px;
+}
+
+/* FLIP CARDS */
+.flip-card {
+  	background-color: transparent;
+  	width: 344px;
+  	height: 485px;
+}
+
+.flip-card-inner {
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition: transform 0.3s;
+  	transform-style: preserve-3d;
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	backface-visibility: hidden;
+}
+
+.flip-card-front {
+  	background-color: #f1f1f1;
+  	color: black;
+}
+
+.flip-card-back {
+  	background-color: #bababa;
+  	color: white;
+  	padding: 20px;
+  	padding-bottom: 0px;
+  	overflow: auto;
+  	transform: rotateY(180deg);
+}
+
+/* FADE ANIMATION */
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 2s;
+  	animation-name: fade;
+  	animation-duration: 2s;
+}
+
+/* FOUR COLLUMN CSS */
+* {
+  	box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  	float: left;
+  	width: 25%;
+  	height: auto;
+  	padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+/* FORM */
+.form {
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	font-size: 14px;
+	marign: auto;
+}
+
+input[type=text], input[type=number], input[type=email], select, textarea {
+	font-family: "Open Sans", sans-serif;
+	min-width: 960px;
+	max-width: 960px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #e1e1e1;
+}
+
+input[type=text].error, input[type=number].error, input[type=email].error, select.error, textarea.error {
+	background-color: #f7b2b2;
+    border: 1px solid #900;
+}
+
+input[type=text].ok, input[type=number].ok, input[type=email].ok, select.ok, textarea.ok {
+    background-color: #bbf7b2;
+    border: 1px solid #249000;
+}
+
+button[type=button] {
+	font-family: "Open Sans", sans-serif;
+	min-width: 960px;
+	max-width: 960px;
+	background-color: #900;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button[type=button]:hover {
+	background-color: #700;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Separate to ^ */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
