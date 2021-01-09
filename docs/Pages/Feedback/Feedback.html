@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/main1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<link rel="shortcut icon" href="../../Page Elements/favicon.ico" type="image/x-icon" />
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Good Games - Feedback</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" media="screen and (min-width: 1024px)" href="../../css/widescreen2.css" />
+<link rel="stylesheet" media="screen and (max-width: 1023px)" href="../../css/smallscreen2.css" />
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body>
+<table width="100%" height="538" border="0" align="center">
+  <tr>
+    <td height="399" valign="top"><div class="navcontainer" id= "myHeader">
+  <div class="navbar">
+  <!-- InstanceBeginEditable name="currentpage" -->
+  <a class="current" href="Feedback.html" target="_self"><strong>FEEDBACK</strong></a> 
+  <div class="dropdown">
+    <button class="dropbtn"><strong>GAME REVIEWS</strong>
+     </button>
+    <div class="dropdown-content">
+      <b><strong>PLATFORM</strong></b>
+      <a href="../Game Reviews/PC.html" target="_self">PC</a>
+      <a href="../Game Reviews/Xbox.html" target="_self">Xbox</a>
+      <a href="../Game Reviews/Playstation.html" target="_self">PlayStation</a>
+      <a href="../Game Reviews/Nintendo.html" target="_self">Nintendo</a>
+      <a href="../Game Reviews/Mobile.html" target="_self">Mobile</a>
+    </div>
+  </div>
+  <a href="../Home/Home.html" target="_self"><strong>HOME</strong></a>
+  <!-- InstanceEndEditable -->
+  <class = navbaricon><img src="../../Page Elements/GG game reviews WITH SPACING.png" width="60" height="54" alt="Good Games"></div>
+  </div>
+  
+<! BURGER MENU >
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+  <a href="../Home/Home.html" target="_self"><strong>HOME</strong></a>
+  <h><strong>GAME REVIEWS</strong></h>
+	<div class="indent">
+		<a href="../Game Reviews/PC.html" target="_self">PC</a>
+    	<a href="../Game Reviews/Xbox.html" target="_self">Xbox</a>
+    	<a href="../Game Reviews/PlayStation.html" target="_self">PlayStation</a>
+    	<a href="../Game Reviews/Nintendo.html" target="_self">Nintendo</a>
+   		<a href="../Game Reviews/Mobile.html" target="_self">Mobile</a>
+	</div>
+  <a href="Feedback.html" target="_self"><strong>FEEDBACK</strong></a>
+</div>
+<h2 class="menubutton" id="SmallNav"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span><img src="../../Page Elements/GG game reviews WITH SPACING SMALLSCREEN.png" alt="Good Games" width="75" height="41" align="right"></h2>
+
+<!-- InstanceBeginEditable name="Content" -->
+<p>&nbsp;</p>
+
+<div class="content"> Thank you for visiting our website, to suggest an improvement or contact us for any other means, please fill in the form below. We will respond to your request in under 24 hours.</div>
+
+<div style="width:960px;">
+	<div class="form">
+        <form action="mailto:gg.enquiries@ggmail.com" method="post" enctype="text/plain" name="registration" id="registration">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+            <strong>FORENAME</strong> <br>
+            <input type="text" class="normal" name="Forename" placeholder="John" id="Forename">
+            <p>&nbsp;</p>
+                        
+            <strong>SURNAME</strong> <br>
+            <input type="text" class="normal" name="Surname" placeholder="Doe" id="Surname">
+            <p>&nbsp;</p>
+            
+            <strong>AGE</strong> <br>
+            <input type="number" class="normal" name="Age" placeholder="30" id="Age">
+            <p>&nbsp;</p>
+            
+            <strong>GENDER</strong> <br>
+            <input name="Gender" class="normal" type="radio" id="Male" value="Male"  id="Gender" checked>
+		  <label for="Male">Male</label><br>
+            
+  			<input type="radio" class="normal" id="Female" name="Gender" value="Female"  id="Gender">
+  			<label for="Female">Female</label>
+            <p>&nbsp;</p>
+            
+            <strong>EMAIL</strong> <br>
+            <input type="email" class="normal" name="Email" placeholder="johndoe@example.com"  id="Email">
+            <p>&nbsp;</p>
+            
+            <strong>PLATFORM</strong> <br>
+            <select name="Platform" class="normal"  id="Platform">
+              <option value="Select" selected>Select</option>
+              <option value="None">None</option>
+              <option value="PC">PC</option>
+              <option value="Xbox">Xbox</option>
+              <option value="PlayStation">PlayStation</option>
+              <option value="Nintendo">Nintendo</option>
+              <option value="Mobile">Mobile</option>
+     		</select>
+            <p>&nbsp;</p>
+            
+            <strong>MESSAGE</strong> <br>
+            <textarea name="Message" class="normal" style="height:200px;" placeholder="Message"  id="Message"></textarea>
+            <br><br>
+            
+            <button type="button" onclick="return formValidation()">SUBMIT</button>
+        </form>
+	</div>
+</div>
+
+
+<script>
+
+/* Main Function grouping if sub functions */
+function formValidation()
+{			/*Main Function Open Bracket */
+
+var vForename = document.registration.Forename;
+var vSurname = document.registration.Surname;
+var vAge = document.registration.Age;
+var vEmail = document.registration.Email;
+var vPlatform = document.registration.Platform;
+var vMsg = document.registration.Message;
+{
+if(allLetterfn(vForename))
+{
+if(allLettersn(vSurname))
+{
+if(allNumber(vAge))
+{
+if(email(vEmail))
+{
+if(valueselect(vPlatform))
+{
+if(allLettermsg(vMsg))
+{
+}
+}
+}
+}
+}
+}
+}
+
+return false;
+
+/*Forename */
+function allLetterfn(vForename)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(vForename.value.match(letters))
+{
+var x = document.getElementById("Forename");
+x.className = "ok";
+
+return true;
+}
+else
+{
+alert('First name must be entered and have alphabetic characters only');
+
+var x = document.getElementById("Forename");
+x.className = "error";
+
+
+
+return false;
+}
+}
+
+/*Surname */
+function allLettersn(vSurname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(vSurname.value.match(letters))
+{
+var y = document.getElementById("Surname");
+y.className = "ok";
+
+return true;
+}
+else
+{
+alert('Surname must be entered and have alphabetic characters only');
+var x = document.getElementById("Surname");
+x.className = "error";
+
+return false;
+}
+}
+
+/*Age */
+function allNumber(vAge)
+{
+var numbers = /^[0-99]+$/;
+if(vAge.value.match(numbers))
+{
+
+var y = document.getElementById("Age");
+y.className = "ok";
+
+return true;
+}
+else
+{
+alert('Age must be entered and have numerical characters only');
+var x = document.getElementById("Age");
+x.className = "error";
+return false;
+}
+}
+
+
+/*Email */
+function email(vEmail)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(vEmail.value.match(mailformat))
+{
+
+var y = document.getElementById("Email");
+y.className = "ok";
+
+return true;
+}
+else
+{
+alert('Email must be entered and valid');
+var x = document.getElementById("Email");
+x.className = "error";
+return false;
+}
+}
+
+/*Platform */
+function valueselect(vPlatform)
+{
+if(vPlatform.value == "Select")
+{
+alert('Select your platform from the list');
+return false;
+}
+else
+{
+return true;
+}
+}
+
+/*Message */
+function allLettermsg(vMsg)
+{
+var letters = /[A-Za-z]+/;
+if(vMsg.value.match(letters))
+{
+
+var y = document.getElementById("Message");
+y.className = "ok";
+
+alert("Your data is correct, and will now be submitted.");
+document.forms["registration"].submit();
+
+return true;
+}
+else
+{
+alert('Message must be entered');
+var x = document.getElementById("Message");
+x.className = "error";
+return false;
+}
+}
+
+
+}	/*Main Function Close Bracket */
+</script>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<br>
+
+<!-- InstanceEndEditable --></td>
+  </tr>
+  <tr>
+    <td height="200" valign="middle" width="100%" bgcolor="#333333"><h><img src="../../Page Elements/GG game reviews.png" alt="GG Game Reviews Logo" width="180" height="149" hspace="10" vspace="10" class="footericon"><div class="footer"><h>
+      <p class="footer"><strong>GG.GAMEREVIEWS@GGMAIL.COM<br>
+      </strong><span class="footersecondary">COPYRIGHT © 2020 Good Games Game Reviews ®, website design for anyone by DunlopDesign</span></p>
+      <div>
+          <a href="https://www.freeprivacypolicy.com/privacy/view/a68c550c4e5f8e939cfd2d5ee7660a1a" target="_blank">Privacy Policy</a>
+          <a href="../Home/Home.html" target="_self">Home</a>
+          <a href="Feedback.html" target="_self">Contact Us</a>
+          <a href="../Game Reviews/PC.html" target="_self">PC</a>
+          <a href="../Game Reviews/Xbox.html" target="_self">Xbox </a>
+          <a href="../Game Reviews/PlayStation.html" target="_self">PlayStation</a>
+          <a href="../Game Reviews/Nintendo.html" target="_self">Nintendo</a>
+          <a href="../Game Reviews/Mobile.html" target="_self">Mobile</a>
+      </div>
+      </td>
+  </tr>
+</table>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("myHeader");
+var navbarsmall = document.getElementById("SmallNav");
+var sticky = navbar.offsetTop;
+var sticky = navbarsmall.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+	navbarsmall.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+	navbarsmall.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+<!-- InstanceEnd --></html>
