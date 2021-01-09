@@ -154,7 +154,7 @@ body {
 
 /* PARALLAX EFFECTS */
 .parallax1 {
-	background-image: url(../Pages/Game%20Reviews/PC.png);
+	background-image: url(PC.png);
 	min-height: 1000px;
 	width: 100%;
  	background-attachment: fixed;
@@ -164,7 +164,7 @@ body {
 }
 
 .parallax2 {
-	background-image: url(../Pages/Game%20Reviews/Xbox.png);
+	background-image: url(Xbox.png);
 	min-height: 1000px;
 	width: 100%;
  	background-attachment: fixed;
@@ -174,7 +174,7 @@ body {
 }
 
 .parallax3 {
-	background-image: url(../Pages/Game%20Reviews/PlayStation.png);
+	background-image: url(PlayStation.png);
 	min-height: 1000px;
 	width: 100%;
  	background-attachment: fixed;
@@ -184,7 +184,7 @@ body {
 }
 
 .parallax4 {
-	background-image: url(../Pages/Game%20Reviews/Mobile.png);
+	background-image: url(Mobile.png);
 	min-height: 1000px;
 	width: 100%;
  	background-attachment: fixed;
@@ -194,7 +194,7 @@ body {
 }
 
 .parallax5 {
-	background-image: url(../Pages/Game%20Reviews/Nintendo.png);
+	background-image: url(Nintendo.png);
 	min-height: 1000px;
 	width: 100%;
  	background-attachment: fixed;
